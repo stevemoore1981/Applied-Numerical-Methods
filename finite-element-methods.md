@@ -15,7 +15,7 @@ Furthermore, the Finite Element method is also a \emph{local} method in that the
 
 $$ \frac{d\phi}{dx} = 1- \phi $$
 
-![](/assets/SummitSupercomputer.jpg)
+![](figures/SummitSupercomputer.jpg)
 
 $$\begin{aligned}
 \int\limits_{0}^{10}x^2\left(a_{1}(1+x) + a_{2}(2x+x^{2})-1\right)dx &= \left[a_{1}\left(\frac{x^{3}}{3} + \frac{x^{4}}{4}\right) + a_{2}\left(\frac{2x^{4}}{4} + \frac{x^{5}}{5}\right)-\frac{x^{3}}{3} \right]_{0}^{10}    \\
