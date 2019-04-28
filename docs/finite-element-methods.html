@@ -1,0 +1,242 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Finite Element Methods · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="finite-element-methods.html">
+            
+                <a href="finite-element-methods.html">
+            
+                    
+                    Finite Element Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Finite Element Methods</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Similar to Finite Volume methods, Finite Element methods present a way by which we can solve a PDE in a spatial domain with a much more complex geometrical structure compared to Finite Difference methods.<br>The domain is broken up into a collection of cells and  and then a spatial discretization is performed over each cell.<br>A key difference in terminology however, is that the cells are usually called \emph{elements} and the vertices of the elements are usually called \emph{nodes}.<br>Furthermore, the field variable $\phi$ is defined at the nodes of an element, in contrast to a cell based Finite Volume method where it was defined at the cell centroid.<br>The elements used in $1D$ are simply lines, in $2D$ they are commonly triangles or quadrilaterals, and in $3D$, tetrahedra or hexahedra (Figure \ref{Fig:ElementTypes}).<br>Just as there are higher order interpolation methods available to the Finite Difference and Finite Volume methods, with the Finite Element method we can use higher order elements to obtain a more accurate solution.<br>Furthermore, the Finite Element method is also a \emph{local} method in that the discretization within an element will only involve its own nodes.<br>Similar to Finite Volume methods, Finite Element methods present a way by which we can solve a PDE in a spatial domain with a much more complex geometrical structure compared to Finite Difference methods.<br>The domain is broken up into a collection of cells and  and then a spatial discretization is performed over each cell.<br>A key difference in terminology however, is that the cells are usually called \emph{elements} and the vertices of the elements are usually called \emph{nodes}.<br>Furthermore, the field variable $\phi$ is defined at the nodes of an element, in contrast to a cell based Finite Volume method where it was defined at the cell centroid.<br>The elements used in $1D$ are simply lines, in $2D$ they are commonly triangles or quadrilaterals, and in $3D$, tetrahedra or hexahedra (Figure \ref{Fig:ElementTypes}).<br>Just as there are higher order interpolation methods available to the Finite Difference and Finite Volume methods, with the Finite Element method we can use higher order elements to obtain a more accurate solution.<br>Furthermore, the Finite Element method is also a \emph{local} method in that the discretization within an element will only involve its own nodes.</p>
+<p>$$ \frac{d\phi}{dx} = 1- \phi $$</p>
+<p>$$\begin{aligned}
+\int\limits<em>{0}^{10}x^2\left(a</em>{1}(1+x) + a<em>{2}(2x+x^{2})-1\right)dx &amp;= \left[a</em>{1}\left(\frac{x^{3}}{3} + \frac{x^{4}}{4}\right) + a<em>{2}\left(\frac{2x^{4}}{4} + \frac{x^{5}}{5}\right)-\frac{x^{3}}{3} \right]</em>{0}^{10}    \
+&amp;= 2833a<em>{1} + 25000a</em>{2}-333
+\end{aligned}$$</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Finite Element Methods","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"finite-element-methods.md","mtime":"2019-04-28T02:20:29.476Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-28T02:23:01.361Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
