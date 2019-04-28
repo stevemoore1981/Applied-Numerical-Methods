@@ -13,4 +13,4 @@ The elements used in $1D$ are simply lines, in $2D$ they are commonly triangles 
 Just as there are higher order interpolation methods available to the Finite Difference and Finite Volume methods, with the Finite Element method we can use higher order elements to obtain a more accurate solution.
 Furthermore, the Finite Element method is also a \emph{local} method in that the discretization within an element will only involve its own nodes.
 
-$$x = y$$
+$$ \frac{d\phi}{dx} = 1- \phi $$
