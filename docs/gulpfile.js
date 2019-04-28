@@ -3,22 +3,20 @@ const del = require('del');
 const exec = require('child_process').exec;
 const gulpLoadPlugins = require('gulp-load-plugins');
 
-
 const $ = gulpLoadPlugins();
-
 
 gulp.task('clean', function () {
   return del(['docs/**', 'docs/.*', '!docs'], {
     force: true
   });
 });
+
 gulp.task('copy', function () {
   return gulp.src([
       '_book/**/*'
     ])
     .pipe(gulp.dest('docs'));
 });
-
 
 gulp.task('build', function (callback) {
   // In gulp 4, you can return a child process to signal task completion
