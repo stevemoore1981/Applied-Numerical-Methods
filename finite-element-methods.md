@@ -13,10 +13,8 @@ The elements used in $1D$ are simply lines, in $2D$ they are commonly triangles 
 Just as there are higher order interpolation methods available to the Finite Difference and Finite Volume methods, with the Finite Element method we can use higher order elements to obtain a more accurate solution.  
 Furthermore, the Finite Element method is also a \emph{local} method in that the discretization within an element will only involve its own nodes.
 
-$$ \frac{d\phi}{dx} = 1- \phi $$
-
-$$\begin{aligned}
-\int\limits_{0}^{10}x^2\left(a_{1}(1+x) + a_{2}(2x+x^{2})-1\right)dx &= \left[a_{1}\left(\frac{x^{3}}{3} + \frac{x^{4}}{4}\right) + a_{2}\left(\frac{2x^{4}}{4} + \frac{x^{5}}{5}\right)-\frac{x^{3}}{3} \right]_{0}^{10}	\\
+$$ \frac{d\phi}{dx} = 1- \phi $$![](/assets/SummitSupercomputer.jpg)$$\begin{aligned}
+\int\limits_{0}^{10}x^2\left(a_{1}(1+x) + a_{2}(2x+x^{2})-1\right)dx &= \left[a_{1}\left(\frac{x^{3}}{3} + \frac{x^{4}}{4}\right) + a_{2}\left(\frac{2x^{4}}{4} + \frac{x^{5}}{5}\right)-\frac{x^{3}}{3} \right]_{0}^{10}    \\
 &= 2833a_{1} + 25000a_{2}-333
 \end{aligned}$$
 
