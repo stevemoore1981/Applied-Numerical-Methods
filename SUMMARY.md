@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Finite Element Methods](finite-element-methods.md)
-
+* [Euler Methods](./src/euler-methods.md)
+* [Finite Element Methods](./src/finite-element-methods.md)
